@@ -1,0 +1,142 @@
+<!--Create a table using CSS that looks like this-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Details</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+	<style type="text/css">
+			th{
+				text-align: left;
+			}
+			table{
+				border-collapse: collapse;width:80%;
+				font-family: serif;
+			}
+			.outer{
+				width:800px;border: 3px solid black;height:500px;margin: 5em auto;
+			}
+			.inner{
+				margin: 5em auto;
+			}
+			.table1{
+				margin: auto;
+			}
+			input[type="text"]{
+				float: right;border:2px solid black;
+			}
+			.table2{
+				margin: auto;
+			}
+			.table3{
+				margin: auto;
+			}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="inner">
+	    <table class="table1"  align="center">	
+		    <tr>
+				<td>show <select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option selected="5">5</option>
+				</select> entries</td>
+				<td></td>
+				<td align="center"><h2> Customer <b>Details</b></h2></td>
+				<td align="center"><input type="text" name="txt" placeholder="search"></td>
+		    </tr>
+		</table>	
+		<table class="table2" border="1px" align="center">
+			<tr>
+				<th>#</th>
+				<th>Name <a href="#"><i class="fa fa-sort" style="color: #000000"></i></a></th>
+				<th>Address</th>
+				<th>City <a href="#"><i class="fa fa-sort" style="color: #000000"></i></a></th>
+				<th>Pincode</th>
+				<th>Country <a href="#"><i class="fa fa-sort" style="color: #000000"></i></a></th>
+				<th>Actions</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Thomas Hardy</td>
+				<td>89 Chiarsco Rd</td>
+				<td>Portland</td>
+				<td>91219</td>
+				<td>USA</td>
+				<td><a href="#"><i style="color:#00BFFF;" class="fa fa-eye"></i></a>
+					<a href="#"><i style="color:#FFA500;" class="fa fa-pencil"></i></a>
+					<a href="#"><i style="color:#FF0000;" class="fa fa-trash"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Maria Anders</td>
+				<td>Obere Str 57</td>
+				<td>Berlin</td>
+				<td>12209</td>
+				<td>Germany</td>
+				<td><a href="#"><i style="color:#00BFFF;" class="fa fa-eye"></i></a>
+					<a href="#"><i style="color:#FFA500;" class="fa fa-pencil"></i></a>
+					<a href="#"><i style="color:#FF0000;" class="fa fa-trash"></i></a></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Fran Wilson</td>
+				<td>C/Araquil 67</td>
+				<td>Madrid</td>
+				<td>28023</td>
+				<td>Spain</td>
+				<td><a href="#"><i style="color:#00BFFF;" class="fa fa-eye"></i></a>
+					<a href="#"><i style="color:#FFA500;" class="fa fa-pencil"></i></a>
+					<a href="#"><i style="color:#FF0000;" class="fa fa-trash"></i></a></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Dominic Perrier</td>
+				<td>25 rue Lauriston</td>
+				<td>Paris</td>
+				<td>75016</td>
+				<td>France</td>
+				<td><a href="#"><i style="color:#00BFFF;" class="fa fa-eye"></i></a>
+					<a href="#"><i style="color:#FFA500;" class="fa fa-pencil"></i></a>
+					<a href="#"><i style="color:#FF0000;" class="fa fa-trash"></i></a></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Martin Blank</td>
+				<td>Via Monteblango 34</td>
+				<td>Turin</td>
+				<td>10100</td>
+				<td>Italy</td>
+				<td><a href="#"><i style="color:#00BFFF;" class="fa fa-eye"></i></a>
+					<a href="#"><i style="color:#FFA500;" class="fa fa-pencil"></i></a>
+					<a href="#"><i style="color:#FF0000;" class="fa fa-trash"></i></a></td>
+			</tr>
+		</table>
+		<table class="table3" ; align="center">
+			<tr>
+				<td>Showing <b>5</b> out of <b>25</b> entries</td>
+				<td align="right"><ul class="pagination pagination-sm pagination justify-content-end" style="margin: 5px auto;">
+			        <li class="page-item"><a class="page-link" href="#" style="color:#000000;background-color: #D3D3D3; border-radius: 0%">Previous</a></li>
+			        <li class="page-item"><a class="page-link" href="#" style="border-radius: 50%;color:#000000;background-color: #D3D3D3;">1</a></li>
+			        <li class="page-item"><a class="page-link" href="#" style="border-radius: 50% ;color:#000000;background-color:#D3D3D3;">2</a></li>
+			        <li class="page-item-active"><a class="page-link" href="#" style="border-radius: 50%; color:#000000; background-color:#00BFFF;">3</a></li>
+			        <li class="page-item"><a class="page-link" href="#" style="border-radius: 50%;color:#000000;background-color:#D3D3D3;">4</a></li>
+			        <li class="page-item"><a class="page-link" href="#" style="border-radius: 50%;color:#000000;background-color: #D3D3D3;">5</a></li>
+			        <li class="page-item"><a class="page-link" href="#" style="color:#000000;background-color: #D3D3D3; border-radius:0%;">Next</a></li></ul>
+			    </td>    
+		    </tr>
+	    </table>
+	    </div>
+    </div>
+</body>
+</html>
